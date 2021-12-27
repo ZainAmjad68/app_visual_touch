@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release:automated": "claudia --config claudia-staging.json update",
+    "release:automated:production": "claudia --config claudia-production.json update"
   },
   "keywords": [],
   "author": "",
