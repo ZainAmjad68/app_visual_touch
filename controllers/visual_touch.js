@@ -28,14 +28,12 @@ exports.servePortal = async function (req, res) {
       },
     });
 
-    req.log.info("Response From VT:", response);
-    console.log("Response From VT:", response);
-
     if (response.data && !response.data.Error) {
       console.log("response Token:", response.data.Token);
       let portalUrl = urljoin(config.get("vt").baseUrl, VTurls.HomePageUrl);
 
       let urlWithQueryParams = `${portalUrl}?token=${response.data.Token}&acct=${req.acct}`;
+      console.log('going to URL:', urlWithQueryParams);
       /*
       urlWithQueryParams = new URL(portalUrl);
       let searchParams = urlWithQueryParams.searchParams;

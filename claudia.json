@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "app_visual_touch-executor",
+    "name": "app_visual_touch",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "es6e2e68uk"
+  }
+}
