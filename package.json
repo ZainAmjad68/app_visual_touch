@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release:automated": "claudia --config claudia-staging.json update",
+    "release:automated:production": "claudia --config claudia-production.json update"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "aws-serverless-express": "^3.4.0",
     "axios": "^0.24.0",
     "bunyan": "^1.8.15",
     "convict": "^6.2.1",
@@ -19,5 +21,8 @@
     "lodash": "^4.17.21",
     "url-join": "^4.0.1",
     "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "claudia": "^5.14.0"
   }
 }
