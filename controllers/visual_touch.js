@@ -34,13 +34,7 @@ exports.servePortal = async function (req, res) {
 
       let urlWithQueryParams = `${portalUrl}?token=${response.data.Token}&acct=${req.acct}`;
       console.log('going to URL:', urlWithQueryParams);
-      /*
-      urlWithQueryParams = new URL(portalUrl);
-      let searchParams = urlWithQueryParams.searchParams;
-      searchParams.set("token", response.data.Token);
-      searchParams.set("acct", req.acct);
-      console.log("final URL href:", urlWithQueryParams);
-      */
+
       res.redirect(urlWithQueryParams);
     } else {
       throw new Error({
