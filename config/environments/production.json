@@ -1,0 +1,10 @@
+{
+  "environment": "development",
+  "Port": 8080,
+  "vt": {
+    "baseUrl": "https://vtstore.vtonlineorder.com",
+    "username": "SNaxmJkF-jjLKCamy-trGGCZbi-xPaCNoKc-G3rj",
+    "password": "0TdifsvXSwgZvvg4OXyCBhJrI43KemPJ",
+    "jwtSecret": "qwerty"
+  }
+}
